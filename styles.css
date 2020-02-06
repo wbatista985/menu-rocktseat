@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+}
+
+body {
+    font-family:sans-serif;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+header {
+    padding : 30px;
+    background-color: blueviolet;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+    flex-direction:row;
+}
+
+header div a {
+    margin: 0;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    color:black;
+}
+
+.menu a:hover {
+    background-color:black; 
+    color: white ;
+    border-radius:  10px;
+    box-shadow: 1px 1px 1px 1px #000; 
+}
+
+#wrapper h1{
+        font-size: 30px;
+        line-height: 32px;
+        text-align: center;
+        color: white;
+        padding: 30px;
+        margin: 30px;
+}
+h1{
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    padding: 30px;
+    margin: 30px;
+}
+
+#logo{
+    padding: 30px;
+    margin-top: 20px;
+    margin-left: 32%;
+}
+
+
+/*-----------CARDS----------------*/
+#body {
+    background-color: black;
+}
+
+.cards {
+    max-width: 1020px;
+    margin: auto;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+#starter{
+    border:  2px solid#7159c1;
+    padding: 14px;
+    text-align: center;
+}
+#starter span {
+    color: #7159c1;
+    font-weight: bold;
+}
+#starter .card_price {
+    background-color: #7159c1 ;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+#launchbase{
+    border:  2px solid #fd951f;
+    padding-top: 14px;
+    text-align: center;
+}
+ #lounchbase span {
+     font-weight: bold;
+    color: #fd951f;
+}
+#launchbase .card_price {
+    background-color:  #fd951f ;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+#gostack  {
+    border:  2px solid #04d361;
+    padding: 14px;
+    text-align: center;
+}
+#gostack span {
+    font-weight: bold;
+    color: #04d361;
+}
+#gostack .card_price {
+    background-color:  #04d361 ;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+.card {
+    /* border:  2px solid #50fa7b; */
+    border-radius: 25px;
+}
+.card_image-container img {
+    padding: 30px;  
+}
+.card_content,
+.card_info {
+    color: #76757a;
+    padding :10px;
+    text-align: center;
+}
+.card_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   padding-top: 45px;
+   padding-bottom: 35px;
+}
+
+
+
+/*-----------MODAL-----------*/
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    width: 60%;
+    height: 60%;
+    margin: 25vh auto;
+    position: relative;
+}
+ .close-modal {
+    color: black;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    cursor: pointer;
+}
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 10px;
+    top: -2px;
+    cursor: pointer;
+}
+.maximize  {
+    color: black;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    cursor: pointer;
+}
+.modal.maximize{ 
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    margin: 0 30px;
+    position: relative; }
+
+/*-----------MODAL-----------*/
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+}
+
